@@ -1,0 +1,148 @@
+@import url('https://fonts.google.com/specimen/Outfit');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Outfit, sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 5px;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 1em 0;
+}
+
+h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 1em;
+    line-height: 1.6em;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    margin-bottom: 0.3em;
+    padding: 0;
+  }
+
+span {
+    color: hsl(0, 0%, 100%);
+}
+
+span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.card {
+    width: 350px;
+    height: 596px;
+    background-color: hsl(216, 50%, 16%);
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 10px;
+    padding: 20px;
+
+    box-shadow: 0 1em 2em 1em rgb(5, 10, 39, 0.3);
+}
+
+.image-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.image-container:hover .eye {
+    opacity: 1;
+    
+}
+
+.eye {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.eth {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.eth p {
+    color: hsl(178, 100%, 50%);
+}
+
+.time-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.eth p,
+.time-left p {
+    margin: 1.8em 0 2em 0;
+    line-height: 0;
+}
+
+.author {
+    display: flex;
+    align-items: end;
+    gap: 0.5em;
+}
+
+.author img {
+    max-width: 2em;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 375px) {
+    .attribution {
+        font-size: 7px;
+    }
+}
